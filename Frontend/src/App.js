@@ -1,9 +1,7 @@
 import React from 'react';
-
+import axios from 'axios';
 function App() {
-  fetch('/users')
-  .then(res => res.json())
-  .then(users => console.log(users))
+  
   return (
     <div className="App">
       <header className="App-header">
