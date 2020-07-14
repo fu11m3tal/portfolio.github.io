@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import axios from 'axios';
 import HideAppBar from './Bar.js';
 import SimplePaper from './SimplePaper.js';
@@ -7,7 +8,8 @@ import IconLabelButtons from './IconLabelButtons.js';
 import TitlebarGridList from './TitlebarGridList.js';
 import HeaderDrawer from './layout-components/HeaderDrawer/index.js';
 import Sidebar from './layout-components/Sidebar/index';
-import DashboardDefault from './example-pages/DashboardDefault/index.js'
+import DashboardDefault from './example-pages/DashboardDefault/index.js';
+import PromoSection from './layout-components/PromoSection/index.js';
 import './App.css';
 
 import { BrowserRouter } from 'react-router-dom';
@@ -267,20 +269,35 @@ library.add(
 const store = configureStore();
 
 function App() {
-  axios.get('/api')
-  .then((response) => {console.log(response.data)})
-  .catch((error) => {console.log(error)})
+  // axios.get('/api')
+  // .then((response) => {console.log(response.data)})
+  // .catch((error) => {console.log(error)})
   
   return (
-    <Provider store={store}>
-
-      <HideAppBar />
-      <SimplePaper />
-      <MediaCard />
-      <IconLabelButtons />
-      <TitlebarGridList />
-
-    </Provider>
+    <Router>
+      <Provider store={store}>
+        <Link to={`/dashboard`}>
+          Dashboard
+        </Link>
+        <Link to={`/about`}>
+          About
+        </Link>
+        <Link to={`/portfolio`}>
+          Portfolio
+        </Link>
+        <Link to={`/resume`}>
+          Resume
+        </Link>
+        <Link to={`/contact`}>
+          Contact
+        </Link>
+        <Route path="/dashboard" component={DashboardDefault} />
+        <Route path="/about" component={Sidebar} />
+        <Route path="/portfolio" component={HeaderDrawer} />
+        <Route path="/resume" component={IconLabelButtons} />
+        <Route path="/contact" component={HideAppBar} />
+      </Provider>
+    </Router>
   );
 }
 
