@@ -1,0 +1,9 @@
+.App {
+  height: 10000px;
+  /* background-image: url("img.jpeg"); 
+  background-repeat: no-repeat, repeat;
+  background-size: 100%; */
+  border-style: solid;
+  background-color: grey;
+  padding: 50px;
+}
