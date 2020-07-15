@@ -10,7 +10,7 @@ import HeaderDrawer from './layout-components/HeaderDrawer/index.js';
 import Sidebar from './layout-components/Sidebar/index';
 import DashboardDefault from './example-pages/DashboardDefault/index.js';
 import PromoSection from './layout-components/PromoSection/index.js';
-import './App.css';
+import './css/App.css';
 
 import { BrowserRouter } from 'react-router-dom';
 import configureStore from './config/configureStore';
@@ -19,7 +19,7 @@ import Routes from './Routes';
 import ScrollToTop from './utils/ScrollToTop';
 import './assets/base.scss';
 import CssBaseline from '@material-ui/core/CssBaseline';
-
+import Navigation from './components/Navigation.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   fab,
@@ -267,35 +267,82 @@ library.add(
 );
 
 const store = configureStore();
+class DynamicImport extends React.Component {
+  state = {
+    component: null
+  }
+  componentWillMount() {
+    this.props.load()
+      .then((mod) => this.setState(() => ({
+        component: mod.default
+      })))
+  }
+  render() {
+    return this.props.children(this.state.component)
+  }
+}
+
+const Dashboard = (props) => (
+  <DynamicImport load={() => import('./components/Dashboard.js')}>
+    {(Component) => Component === null
+      ? <h1>Loading...</h1>
+      : <Component {...props} />}
+  </DynamicImport>
+)
+
+const About = (props) => (
+  <DynamicImport load={() => import('./components/About.js')}>
+    {(Component) => Component === null
+      ? <h1>Loading...</h1>
+      : <Component {...props} />}
+  </DynamicImport>
+)
+
+const Portfolio = (props) => (
+  <DynamicImport load={() => import('./components/Portfolio.js')}>
+    {(Component) => Component === null
+      ? <h1>Loading...</h1>
+      : <Component {...props} />}
+  </DynamicImport>
+)
+
+const Resume = (props) => (
+  <DynamicImport load={() => import('./components/Resume.js')}>
+    {(Component) => Component === null
+      ? <h1>Loading...</h1>
+      : <Component {...props} />}
+  </DynamicImport>
+)
+const Contact = (props) => (
+  <DynamicImport load={() => import('./components/Contact.js')}>
+    {(Component) => Component === null
+      ? <h1>Loading...</h1>
+      : <Component {...props} />}
+  </DynamicImport>
+)
 
 function App() {
   // axios.get('/api')
   // .then((response) => {console.log(response.data)})
   // .catch((error) => {console.log(error)})
-  
+  const make_button = (name) => {
+    return (
+      <div>
+        <button>
+          Hello
+        </button>
+      </div>
+    )
+  } 
   return (
     <Router>
       <Provider store={store}>
-        <Link to={`/dashboard`}>
-          Dashboard
-        </Link>
-        <Link to={`/about`}>
-          About
-        </Link>
-        <Link to={`/portfolio`}>
-          Portfolio
-        </Link>
-        <Link to={`/resume`}>
-          Resume
-        </Link>
-        <Link to={`/contact`}>
-          Contact
-        </Link>
-        <Route path="/dashboard" component={DashboardDefault} />
-        <Route path="/about" component={Sidebar} />
-        <Route path="/portfolio" component={HeaderDrawer} />
-        <Route path="/resume" component={IconLabelButtons} />
-        <Route path="/contact" component={HideAppBar} />
+        <Navigation />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/about" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
       </Provider>
     </Router>
   );
