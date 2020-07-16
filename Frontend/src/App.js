@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 
 import ScrollToTop from './utils/ScrollToTop';
 import Navigation from './components/Navigation.js';
-import LivePreviewExample from './components/Modal.js';
+import Modal from './components/Modal.js';
 
 import './css/App.css';
 
@@ -73,10 +73,9 @@ function App() {
   return (
     <Router className="app">
       <Provider store={store}>
-        <LivePreviewExample />
         <Navigation />
         <Route path="/home" component={Home} />
-        <Route path="/about" component={About} />
+        <Route path="/about" component={Modal} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume" component={Resume} />
         <Route path="/contact" component={Contact} />

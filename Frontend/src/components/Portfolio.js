@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 
 export default function Portflio(props) {
   const classes = useStyles();
-  const projects = [{type: "Photo Gallery", img: "https://i.imgur.com/uJ0wYa0.gif"}, {type: "Backend", img: ""}, {type: "Fullstack", img: ""}]
+  const projects = [{type: "Triply", img: "https://i.imgur.com/uJ0wYa0.gif",  component: "Photo Carousel", stack: "React, HTML/CSSS, Express, MySql"}, {type: "Reviews", img: "",  component: "Fullstack",  stack: "React, HTML/CSSS, Express, Mongo"}, {type: "Fullstack", img: "",  component: "", stack: "React, HTML/CSSS, Express, MySql"}]
   return (
     <div>
     {projects.map((project, index) => (
@@ -35,8 +35,10 @@ export default function Portflio(props) {
               {project.type}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              {project.component}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {project.stack}
             </Typography>
           </CardContent>
         </CardActionArea>
