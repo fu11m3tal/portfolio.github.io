@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 
 import ScrollToTop from './utils/ScrollToTop';
 import Navigation from './components/Navigation.js';
+import LivePreviewExample from './components/Modal.js';
+
 import './css/App.css';
 
 
@@ -28,8 +30,8 @@ class DynamicImport extends Component {
   }
 }
 
-const Dashboard = (props) => (
-  <DynamicImport load={() => import('./components/Dashboard.js')}>
+const Home = (props) => (
+  <DynamicImport load={() => import('./components/Home.js')}>
     {(Component) => Component === null
       ? <h1>Loading...</h1>
       : <Component {...props} />}
@@ -71,8 +73,9 @@ function App() {
   return (
     <Router className="app">
       <Provider store={store}>
+        <LivePreviewExample />
         <Navigation />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume" component={Resume} />

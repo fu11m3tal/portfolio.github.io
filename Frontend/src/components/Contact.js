@@ -13,7 +13,6 @@ const Contact = ({  }) => {
   }
   return (
     <div className="contact">
-      <h1>Contact</h1>
       <address>
         {contact.email}<br/>
         {contact.location}<br/>
