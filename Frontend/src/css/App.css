@@ -1,13 +1,15 @@
-.App {
-  height: 10000px;
+.app {
+  height: 100%;
   /* background-image: url("img.jpeg"); 
   background-repeat: no-repeat, repeat;
   background-size: 100%; */
   border-style: solid;
-  background-color: grey;
+  color: white;
   padding: 50px;
 }
 
-.img {
-  border-radius: 100px;
+
+.route {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 100px;
 }

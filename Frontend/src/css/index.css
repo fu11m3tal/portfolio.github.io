@@ -1,4 +1,14 @@
 body {
-  background-color: #cccccc;
+  background-color: black;
   padding: 50px;
+  height: 2000px;
+  color: white;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;  
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;  
 }

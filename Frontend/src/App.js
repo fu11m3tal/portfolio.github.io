@@ -4,8 +4,8 @@ import configureStore from './config/configureStore';
 import { Provider } from 'react-redux';
 
 import ScrollToTop from './utils/ScrollToTop';
-import './assets/base.scss';
 import Navigation from './components/Navigation.js';
+import './css/App.css';
 
 
 const store = configureStore();
@@ -69,7 +69,7 @@ const Contact = (props) => (
 
 function App() {
   return (
-    <Router>
+    <Router className="app">
       <Provider store={store}>
         <Navigation />
         <Route path="/dashboard" component={Dashboard} />

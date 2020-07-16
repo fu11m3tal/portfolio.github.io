@@ -1,4 +1,9 @@
 .profile {
   border-radius: 100%;
-  width: 300px;
+  width: 500px;
+}
+
+#font {
+  font-family: 'Work Sans', sans-serif;  
+  font-size: 30px;
 }

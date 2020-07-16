@@ -1,16 +1,46 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
 
+import '../css/Contact.css';
 const Contact = ({  }) => {
+  const contact = {
+    name: "Steven Yoh",
+    email: "steven.christopher.yoh@gmail.com",
+    location: "Cupertino, CA",
+    phone: "408-483-9380",
+    linkedin: {img: "https://image.flaticon.com/icons/png/512/61/61109.png", href: "https://www.linkedin.com/in/stevenyoh/"},
+    github: {img: "https://cdn3.iconfinder.com/data/icons/social-icons-hex-grey/512/GITHUB-512.png", href: "https://github.com/fu11m3tal"}
+  }
   return (
-    <div>
+    <div className="contact">
       <h1>Contact</h1>
       <address>
-        steven.christopher.yoh@gmail.com<br/>
-        Cupertino, CA<br/>
-        (408) 483-9380 
+        {contact.email}<br/>
+        {contact.location}<br/>
+        {contact.phone}
       </address>
-      <a href="https://www.linkedin.com/in/stevenyoh/">Linkedin</a><br/>
-      <a href="https://github.com/fu11m3tal">Github</a><br/>
+      <h3>Have a question or want to work together?</h3>
+      <TextField
+        label="Name" 
+        variant="filled"
+      />
+      <br/>
+      <TextField
+        label="Email" 
+        variant="filled"
+      />
+      <br/>
+      <TextField
+        label="Your message" 
+        variant="filled"
+      />
+      <br/>
+      <a href={contact.linkedin.href}>
+        <img src={contact.linkedin.img}/>
+      </a><br/>
+      <a href={contact.github.href}>
+        <img src={contact.github.img}/>
+      </a><br/>
     </div>
   )
 }
