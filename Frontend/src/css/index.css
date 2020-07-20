@@ -1,5 +1,6 @@
 body {
-  background-color: black;
+  background-image: url("./background.jpg");
+  background-size: 3000px;
   padding: 50px;
   height: 2000px;
   color: white;

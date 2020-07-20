@@ -74,8 +74,8 @@ function App() {
     <Router className="app">
       <Provider store={store}>
         <Navigation />
-        <Route path="/home" component={Home} />
-        <Route path="/about" component={Modal} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume" component={Resume} />
         <Route path="/contact" component={Contact} />

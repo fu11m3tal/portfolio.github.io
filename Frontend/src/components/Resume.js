@@ -1,12 +1,13 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const Resume = ({  }) => {
   return (
     <div>
-      <h1>Resume</h1>
-      <h1>PDF Example</h1>
-      {/* <p>Open a PDF file <a href="/Resume.pdf">example</a>.</p> */}
-      {/* <embed src="Resume.pdf" type="application/pdf" width="100%"/> */}
+      <h1>Where I've Worked</h1>
+      <p>Tesla</p>
+      <p>SolarCity</p>
+      <p>California Public Utilities Commission</p>
     </div>
   )
 }
