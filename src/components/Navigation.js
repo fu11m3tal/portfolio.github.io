@@ -43,7 +43,6 @@ class Navigation extends React.Component {
           <div className="menu-btn" onClick={this.handleMenuBtnClick}>
             <div className="menu-btn_burger"></div>
           </div>
-          {this.state.menuOpen && this.props.children}
         <ul id="menu-list">
           <li><a id="home" href="Home">Home</a></li>
           <li><a id="about" href="about">About</a></li>

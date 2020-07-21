@@ -6,6 +6,7 @@ class Menu extends React.Component {
     super(props)
     this.state = {
       menuOpen: false,
+      tabs: [],
     }
     this.setOpen = this.setOpen.bind(this);
     this.setItems = this.setItems.bind(this);
@@ -22,24 +23,36 @@ class Menu extends React.Component {
     portfolioBtn.classList.toggle('active');
   }
   
-  setOpen(cb) {
+  setOpen() {
     const menuBtn = document.querySelector('.menu-btn');
+    const sideMenu = document.getElementById('sideMenu');
     var {menuOpen} = this.state;
-    if(menuOpen) menuBtn.classList.remove('open');
-    if(!menuOpen) menuBtn.classList.add('open');
-    this.setState({menuOpen: !menuOpen});
-    return setTimeout(cb,1)
+    var menuChange = !menuOpen;
+    sideMenu.classList.toggle('active');
+    if(menuChange) {
+      menuBtn.classList.add('open');
+      this.setState({menuOpen: menuChange, tabs: ["home", "about", "contact", "portfolio"]})
+    } else {
+      menuBtn.classList.remove('open');
+      this.setState({menuOpen: menuChange, tabs: []})
+    }
+    
   }
   
   render() {
+    const { tabs } = this.state;
     return (
       <nav>
-          <div className="menu-btn" onClick={() => (this.setOpen(this.setItems))}>
+          <div className="menu-btn" onClick={this.setOpen}>
             <div className="menu-btn_burger"></div>
           </div>
-          <ul id="menu-list">
-          {this.state.menuOpen ? this.props.children : null}
-        </ul>
+          <div id="sideMenu" className="sidemenu">
+            <ul>
+              {tabs.map((tab, index) => (
+                <li><a href={tab}>{tab}</a></li>
+              ))}
+            </ul>
+          </div>
       </nav>
   )
 } 

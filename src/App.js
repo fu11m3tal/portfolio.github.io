@@ -73,14 +73,7 @@ function App() {
   return (
     <Router className="app">
       <Provider store={store}>
-        {/* <Navigation /> */}
-        <Menu>
-          <li><a id="home" href="Home">Home</a></li>
-          <li><a id="home" href="Home">Home</a></li>
-          <li><a id="about" href="about">About</a></li>
-          <li><a id="contact" href="contact">Contact</a></li>
-          <li><a id="portfolio" href="portfolio">Porfolio</a></li>
-        </Menu>
+        <Menu />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
