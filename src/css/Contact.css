@@ -4,6 +4,19 @@ img {
   width: 40px;
 }
 
+.text {
+  margin: 50px;
+  background-color: white;
+}
+
 .contact {
+  margin-top: 100px;
+  margin-left: 100px;
+  padding: 50px;
+  display: flex-box;
   height: 100%;
+}
+
+.icon {
+
 }

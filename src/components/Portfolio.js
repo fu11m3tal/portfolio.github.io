@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import '../css/Portfolio.css';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +24,7 @@ export default function Portflio(props) {
   const classes = useStyles();
   const projects = [{type: "Triply", img: "https://i.imgur.com/uJ0wYa0.gif",  component: "Photo Carousel", stack: "React, HTML/CSSS, Express, MySql"}, {type: "Reviews", img: "",  component: "Fullstack",  stack: "React, HTML/CSSS, Express, Mongo"}, {type: "Fullstack", img: "",  component: "", stack: "React, HTML/CSSS, Express, MySql"}]
   return (
-    <div>
+    <div className="portfolio">
     {projects.map((project, index) => (
       <Card key={index} className={classes.root}>
         <CardActionArea>

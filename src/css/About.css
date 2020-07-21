@@ -1,14 +1,12 @@
+#about {
+  display: flexbox;
+  margin-top: 150px;
+  margin-left: 200px;
+  width: 1000px;
+}
+
 .profile {
   border-radius: 100%;
-  width: 500px;
-}
-
-#font {
-  font-family: 'Work Sans', sans-serif;  
-  font-size: 30px;
-}
-
-.technologyIcons {
-  height: 100px;
-  width:100px;
+  width: 300px;
+  margin-bottom: 20px;
 }
