@@ -25,6 +25,125 @@
   min-height: 100vh;
 }
 
+
+#home {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: 90%;
+  transition: 1.5s;
+}
+
+#home.active {
+  width: 100px;
+  left: 0%;
+}
+
+#about {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: 100%;
+  transition: 1.5s;
+}
+
+#about.active {
+  left: 25%;
+}
+
+#contact {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: 100%;
+  transition: 1.5s;
+}
+
+#contact.active {
+  left: 50%;
+}
+
+#portfolio {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: 100%;
+  transition: 1.5s;
+}
+#portfolio.active {
+  left: 75%;
+}
+
+.menu-btn {
+  position: relative;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 3px solid rgb(252, 252, 252);
+}
+
+.menu-btn_burger {
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(252, 157, 122, 0.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn_burger::after{
+  transform: translateY(16px);
+}
+.menu-btn.open .menu-btn_burger{
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
 nav {
   position: absolute;
   width: 100%;
@@ -45,13 +164,13 @@ nav ul li {
 
 nav ul li a {
   position: relative;
-  padding: 16px 0 5px;
-  margin: 0 100px;
+  /* padding: 16px 0 5px; */
+  /* margin: 0 100px; */
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Audiowide', cursive;
-  font-size: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 30px;
 }
 
 
