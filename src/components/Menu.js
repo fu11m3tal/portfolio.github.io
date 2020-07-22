@@ -9,7 +9,7 @@ class Menu extends React.Component {
       tabs: [],
     }
     this.setOpen = this.setOpen.bind(this);
-    this.setItems = this.setItems.bind(this);
+    this.setClose = this.setClose.bind(this);
   }
 
   setItems() {
@@ -31,12 +31,15 @@ class Menu extends React.Component {
     sideMenu.classList.toggle('active');
     if(menuChange) {
       menuBtn.classList.add('open');
-      this.setState({menuOpen: menuChange, tabs: ["home", "about", "contact", "portfolio"]})
+      this.setState({menuOpen: menuChange, tabs: ["home", "about", "resume", "portfolio", "contact"]})
     } else {
       menuBtn.classList.remove('open');
       this.setState({menuOpen: menuChange, tabs: []})
     }
     
+  }
+  setClose() {
+    this.setState({menuOpen: false, tabs: []})
   }
   
   render() {
@@ -49,7 +52,7 @@ class Menu extends React.Component {
           <div id="sideMenu" className="sidemenu">
             <ul>
               {tabs.map((tab, index) => (
-                <li><a href={tab}>{tab}</a></li>
+                <li onClick={this.setClose} ><a href={tab}>{tab}</a></li>
               ))}
             </ul>
           </div>

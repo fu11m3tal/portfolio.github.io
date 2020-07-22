@@ -1,0 +1,65 @@
+.resume {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  top: 10%;
+  left: 15%;
+  width: 350px;
+  height: 500px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.profile {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slideInFromLeftPosition {
+  0% {
+    transform: translatex(-300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.companies {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline-flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+}
+
+.position {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline-flex;
+  width: 0%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  background-color: rgba(33, 2, 171, 0.345);
+}
+
+.position.open {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline-flex;
+  width: 50%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 2, 171, 0.345);
+}

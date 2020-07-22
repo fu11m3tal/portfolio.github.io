@@ -13,25 +13,28 @@ const Contact = ({  }) => {
   }
   return (
     <div className="contact">
-      <address>
+      <address className="text">
         {contact.email}<br/>
         {contact.location}<br/>
         {contact.phone}
       </address>
-      <h3>Have a question or want to work together?</h3>
+      <h3 className="text">Have a question or want to work together?</h3>
       <TextField
         label="Name" 
         variant="filled"
+        className="text"
       />
       <br/>
       <TextField
-        label="Email" 
+        label="Email" v
         variant="filled"
+        className="text"
       />
       <br/>
       <TextField
         label="Your message" 
         variant="filled"
+        className="text"
       />
       <br/>
       <a href={contact.linkedin.href}>

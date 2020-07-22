@@ -1,0 +1,1 @@
+{"version":3,"sources":["Portfolio.css"],"names":[],"mappings":"AAAA,WACE,iBAAkB,CAClB,aAAc,CACd,KAAO,CACP,QAAS,CACT,UACF","file":"6.9684d033.chunk.css","sourcesContent":[".portfolio {\n  position: absolute;\n  display: block;\n  top: 0%;\n  left: 15%;\n  width: 100%;\n}"]}

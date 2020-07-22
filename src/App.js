@@ -10,6 +10,10 @@ import Menu from './components/Menu.js';
 import './css/App.css';
 
 
+import ReactAudioPlayer from 'react-audio-player';
+
+
+
 const store = configureStore();
 class DynamicImport extends Component {
   state = {
@@ -74,6 +78,15 @@ function App() {
     <Router className="app">
       <Provider store={store}>
         <Menu />
+        {/* <ReactAudioPlayer
+          className="audioPlayer"
+          src="./audio/around.mp3"
+          // autoPlay
+          controls
+          volume={.5}
+          // muted
+          loop
+        /> */}
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
