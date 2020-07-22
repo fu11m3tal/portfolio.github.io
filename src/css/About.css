@@ -1,13 +1,14 @@
 #about {
   position: absolute;
   display: block;
-  top: 0%;
+  top: 10%;
   left: 15%;
-  width: 100%;
+  width: 50%;
+  font-size: 30px;
 }
 
 .profile {
   border-radius: 100%;
   width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }

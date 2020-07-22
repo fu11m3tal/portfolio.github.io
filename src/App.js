@@ -7,6 +7,11 @@ import ScrollToTop from './utils/ScrollToTop';
 import Navigation from './components/Navigation.js';
 import Modal from './components/Modal.js';
 import Menu from './components/Menu.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Portfolio from './components/Portfolio.js';
+import Resume from './components/Resume.js';
+import Contact from './components/Contact.js';
 import './css/App.css';
 
 
@@ -34,64 +39,56 @@ class DynamicImport extends Component {
   }
 }
 
-const Home = (props) => (
-  <DynamicImport load={() => import('./components/Home.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+// const Home = (props) => (
+//   <DynamicImport load={() => import('./components/Home.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
 
-const About = (props) => (
-  <DynamicImport load={() => import('./components/About.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+// const About = (props) => (
+//   <DynamicImport load={() => import('./components/About.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
 
-const Portfolio = (props) => (
-  <DynamicImport load={() => import('./components/Portfolio.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+// const Portfolio = (props) => (
+//   <DynamicImport load={() => import('./components/Portfolio.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
 
-const Resume = (props) => (
-  <DynamicImport load={() => import('./components/Resume.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
-const Contact = (props) => (
-  <DynamicImport load={() => import('./components/Contact.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+// const Resume = (props) => (
+//   <DynamicImport load={() => import('./components/Resume.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
+// const Contact = (props) => (
+//   <DynamicImport load={() => import('./components/Contact.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
 
 function App() {
   return (
     <Router className="app">
       <Provider store={store}>
-        <Menu />
-        {/* <ReactAudioPlayer
-          className="audioPlayer"
-          src="./audio/around.mp3"
-          // autoPlay
-          controls
-          volume={.5}
-          // muted
-          loop
-        /> */}
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/contact" component={Contact} />
+        <Menu className="menu" />
+        <h1 className="welcome">Welcome</h1>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/resume" component={Resume} />
+        <Route exact path="/contact" component={Contact} />
       </Provider>
     </Router>
   );
