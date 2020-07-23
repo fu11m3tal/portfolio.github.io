@@ -38,10 +38,10 @@ const Contact = () => {
       />
       <br/>
       <a href={contact.linkedin.href}>
-        <img src={contact.linkedin.img}/>
+        <img src={contact.linkedin.img} alt=""/>
       </a><br/>
       <a href={contact.github.href}>
-        <img src={contact.github.img}/>
+        <img src={contact.github.img} alt=""/>
       </a><br/>
     </div>
   )

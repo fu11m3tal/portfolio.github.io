@@ -24,7 +24,6 @@ class DynamicImport extends Component {
   componentWillMount() {
     this.props.load()
     .then((mod) => {
-      console.log(mod)
       return mod;
     })
       .then((mod) => this.setState(() => ({
