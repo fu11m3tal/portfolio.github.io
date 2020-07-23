@@ -1,18 +1,27 @@
  .home {
   position: absolute;
+  /* display: flex; */
   top: 0%;
   left: 0;
-  width: 500px;
+  width: 700px;
   height: 50%;
   top: 10%;
-  padding: 100px;
-  border-radius: 3%;
+  padding: 0px;
   margin-left: 250px;
   background-color: black;
-  border-style: solid;
-  border-color: tomato;
 }
 
-.font {
+.header {
   color: white;
+  font-size: 25px;
+} 
+
+.name {
+  color: white;
+  font-size: 80px;
+} 
+
+.introduction {
+  color: white;
+  font-size: 3s5px;
 } 

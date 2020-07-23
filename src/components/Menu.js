@@ -7,9 +7,11 @@ class Menu extends React.Component {
     this.state = {
       menuOpen: false,
       tabs: [],
+      message: "listening"
     }
     this.setOpen = this.setOpen.bind(this);
     this.setClose = this.setClose.bind(this);
+    this.handleLoading = this.handleLoading.bind(this);
   }
 
   setItems() {
@@ -38,8 +40,19 @@ class Menu extends React.Component {
     }
     
   }
-  setClose() {
+  setClose(e) {
+    console.log(e.target)
+    const menuBtn = document.querySelector('.menu-btn');
+    menuBtn.classList.remove('open');
     this.setState({menuOpen: false, tabs: []})
+  }
+
+  handleLoading() {
+    const message = this.state.message;
+    var newMessage = `${message}.`
+    if(newMessage.length > 20) newMessage = "listening";
+    this.setState({message: newMessage})
+    setTimeout(this.handleLoading, 1000);
   }
   
   render() {
@@ -52,9 +65,10 @@ class Menu extends React.Component {
           <div id="sideMenu" className="sidemenu">
             <ul>
               {tabs.map((tab, index) => (
-                <li onClick={this.setClose} ><a href={tab}>{tab}</a></li>
+                <li onClick={this.setClose}><a href={tab}>{tab}</a></li>
               ))}
             </ul>
+            
           </div>
       </nav>
   )

@@ -1,3 +1,11 @@
+@keyframes slideInFromRightTabOpen{
+  0% {
+    transform: translateX(-1420px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 .contact {
   position: absolute;
@@ -6,10 +14,15 @@
   left: 15%;
   width: 50%;
   margin: 25px;
+  padding: 30px;
   background-color: white;
   border-style: solid;
   border-color: tomato;
+  border-radius: 15px;
+  animation: 2s ease-in-out 0s 1 slideInFromRightTabOpen;
 }
+
+
 
 img {
   border-radius: 5px;

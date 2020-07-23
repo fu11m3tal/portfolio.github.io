@@ -2,7 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 
 import '../css/Contact.css';
-const Contact = ({  }) => {
+const Contact = () => {
   const contact = {
     name: "Steven Yoh",
     email: "steven.christopher.yoh@gmail.com",

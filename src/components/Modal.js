@@ -5,19 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
   Grid,
-  Input,
-  InputLabel,
-  InputAdornment,
-  FormControlLabel,
   Avatar,
-  IconButton,
   Box,
   Typography,
   Dialog,
-  Checkbox,
-  Tabs,
-  Tab,
-  LinearProgress,
   Badge,
   Card,
   CardContent,
@@ -27,12 +18,6 @@ import {
 } from '@material-ui/core';
 
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
-
-import MailOutlineTwoToneIcon from '@material-ui/icons/MailOutlineTwoTone';
-import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
-
-import stock1 from '../assets/images/stock-photos/stock-1.jpg';
-
 
 import avatar1 from '../assets/images/avatars/avatar1.jpg';
 import avatar2 from '../assets/images/avatars/avatar2.jpg';
