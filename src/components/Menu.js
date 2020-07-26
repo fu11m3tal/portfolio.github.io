@@ -58,7 +58,7 @@ class Menu extends React.Component {
   render() {
     const { tabs } = this.state;
     return (
-      <nav>
+      <nav className="menu">
           <div className="menu-btn" onClick={this.setOpen}>
             <div className="menu-btn_burger"></div>
           </div>

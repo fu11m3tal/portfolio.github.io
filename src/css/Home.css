@@ -1,14 +1,5 @@
  .home {
-  position: absolute;
-  /* display: flex; */
-  top: 0%;
-  left: 0;
-  width: 700px;
-  height: 50%;
-  top: 10%;
-  padding: 0px;
-  margin-left: 250px;
-  background-color: black;
+
 }
 
 .header {

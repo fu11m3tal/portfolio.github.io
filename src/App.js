@@ -1,20 +1,15 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import configureStore from './config/configureStore';
+import configureStore from './templates/config/configureStore';
 import { Provider } from 'react-redux';
 
 import Menu from './components/Menu.js';
-// import Home from './components/Home.js';
-// import About from './components/About.js';
-// import Portfolio from './components/Portfolio.js';
-// import Resume from './components/Resume.js';
-// import Contact from './components/Contact.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Portfolio from './components/Portfolio.js';
+import Work from './components/Work.js';
+import Contact from './components/Contact.js';
 import './css/App.css';
-
-
-// import ReactAudioPlayer from 'react-audio-player';
-
-
 
 const store = configureStore();
 class DynamicImport extends Component {
@@ -35,59 +30,105 @@ class DynamicImport extends Component {
   }
 }
 
-const Home = (props) => (
-  <DynamicImport load={() => import('./components/Home.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+const Parllax = (props) => {
+  return(
+    <div className="main">
+      <Menu />
+        <div className="pimg1">
+          <div className="ptext">
+           <span className="border">
+            <Home />
+           </span>
+          </div>
+        </div>
+        <section className="section section-light">
+          <About />
+        </section>
 
-const About = (props) => (
-  <DynamicImport load={() => import('./components/About.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+        <div className="pimg2">
+          <div className="ptext">
+           <span className="border">
+            <Work />
+           </span>
+          </div>
+        </div>
+        <section className="section section-light">
+          <p>
+          Languages & Frameworks:​ Javascript (ES6+), React, Redux, jQuery, HTML/CSS
 
-const Portfolio = (props) => (
-  <DynamicImport load={() => import('./components/Portfolio.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+          </p>
+          <p>
+          Databases:​ MongoDB, MySQL, PostgreSQL
+          
+          </p>
+          <p>
+          Other Technologies:​ NodeJS, Express, Jest/Enzyme, Mocha/Chai, Git, Babel, Webpack, AWS (EC2, S3), Docker, Git, Github, Trello, Styled-Components, Loader.io, New Relic, NGINX
+          </p>
+        </section>
 
-const Resume = (props) => (
-  <DynamicImport load={() => import('./components/Resume.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
-const Contact = (props) => (
-  <DynamicImport load={() => import('./components/Contact.js')}>
-    {(Component) => Component === null
-      ? <h1>Loading...</h1>
-      : <Component {...props} />}
-  </DynamicImport>
-)
+        <div className="pimg3">
+          <div className="ptext">
+           <span className="border">
+           More Coming Soon
+           </span>
+          </div>
+        </div>
+        <section className="section section-light">
+          <h2>Section Three</h2>
+          <Contact />
+          <p>
+          More Coming Soon
+          </p>
+        </section>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <Router className="app">
-      <Provider store={store}>
-        <Menu className="menu" />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/contact" component={Contact} />
-      </Provider>
-    </Router>
+    <Parllax />
   );
 }
 
 export default App;
+
+
+// const Home = (props) => (
+//   <DynamicImport load={() => import('./components/Home.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
+
+
+// const About = (props) => (
+//   <DynamicImport load={() => import('./components/About.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
+
+// const Portfolio = (props) => (
+//   <DynamicImport load={() => import('./components/Portfolio.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
+
+// const Resume = (props) => (
+//   <DynamicImport load={() => import('./components/Resume.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )
+// const Contact = (props) => (
+//   <DynamicImport load={() => import('./components/Contact.js')}>
+//     {(Component) => Component === null
+//       ? <h1>Loading...</h1>
+//       : <Component {...props} />}
+//   </DynamicImport>
+// )

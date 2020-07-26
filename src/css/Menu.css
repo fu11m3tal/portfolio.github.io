@@ -1,8 +1,9 @@
 .menu-btn {
-  position: realtive;
+  z-index: 1;
+  position: relative;
   float: left;
   display: flex;
-  top: -40px;
+  top: 0px;
   justify-content: left;
   align-items: center;
   padding-left: 20px;
@@ -10,7 +11,7 @@
   height: 80px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  background: black;
+  background: transparent;
   border: none;
 }
 
@@ -69,11 +70,10 @@
 }
 
 #sideMenu {
-  z-index: -1;
   height: 10000px;
   width: 0px;
   position: fixed;
-  top: -10px;
+  top: 0px;
   left: 10px;
 }
 #sideMenu.active {
