@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     display: flexbox,
     justifyContent: "center",
     alignContent: "center",
-    left: "40%",
+    left: "10%",
     top: "-450px"
   },
   root: {
@@ -51,7 +51,7 @@ export default function Work() {
 
   return (
     <div className={classes.work}>
-      <h1>Work</h1>
+      <h1>Experiences</h1>
       <Card className={classes.root}>
         <CardContent>
           <img className={classes.imgTesla} src="https://logo-logos.com/wp-content/uploads/2018/02/tesla-motors-logo.jpg"/>
@@ -62,16 +62,16 @@ export default function Work() {
             Business Analyst
           </Typography>
           <Typography variant="body2" component="p">
-          -Conducted root cause analysis to identify liability and legal exposure for high escalation cases
+          Conducted root cause analysis to identify liability and legal exposure for high escalation cases
           <br />
           <br />
-          -Performed financial and operational analysis to drive strategic data-driven process improvement initiatives
+          Performed financial and operational analysis to drive strategic data-driven process improvement initiatives
           <br />
           <br />
-          -Improved solar design process by creating energy analysis dashboard to help drive real-time forecasting
+          Improved solar design process by creating energy analysis dashboard to help drive real-time forecasting
           <br />
           <br />
-          -Led energy system analysis training seminars and served as a mentor and coach to junior analyst
+          Led energy system analysis training seminars and served as a mentor and coach to junior analyst
           </Typography>
         </CardContent>
       </Card>

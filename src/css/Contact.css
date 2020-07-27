@@ -8,10 +8,11 @@
 }
 
 .contact {
+  position: relative;
   display: block;
   top: 10%;
-  left: 15%;
-  width: 50%;
+  left: 5%;
+  width: 75%;
   margin: 25px;
   padding: 30px;
   background-color: white;
@@ -21,13 +22,26 @@
   animation: 2s ease-in-out 0s 1 slideInFromRightTabOpen;
 }
 
+.send{
+  margin:10px;
+  border-radius: 10px;
+  width: 185px;
+  height: 35px;
+}
 
-
-img {
+.linkedin {
   border-radius: 5px;
-  margin: 5px;
+  margin-top: 25px;
+  padding: 15px;
   width: 40px;
 }
+.github {
+  border-radius: 5px;
+  margin-top: 0px;
+  padding: 0px;
+  width: 40px;
+}
+
 
 .text {
   margin: 50px;

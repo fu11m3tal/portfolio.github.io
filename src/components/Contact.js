@@ -26,7 +26,7 @@ const Contact = () => {
       />
       <br/>
       <TextField
-        label="Email" v
+        label="Email" 
         variant="filled"
         className="text"
       />
@@ -37,11 +37,13 @@ const Contact = () => {
         className="text"
       />
       <br/>
+      <button className="send">Send</button>
+      <br/>
       <a href={contact.linkedin.href}>
-        <img src={contact.linkedin.img} alt=""/>
+        <img className="linkedin" src={contact.linkedin.img} alt=""/>
       </a><br/>
       <a href={contact.github.href}>
-        <img src={contact.github.img} alt=""/>
+        <img  className="github" src={contact.github.img} alt=""/>
       </a><br/>
     </div>
   )

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import configureStore from './templates/config/configureStore';
 import { Provider } from 'react-redux';
-
+import axios from 'axios';
 import Menu from './components/Menu.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
@@ -30,15 +30,15 @@ class DynamicImport extends Component {
   }
 }
 
-const Parllax = (props) => {
-  return(
+function App() {
+  return (
     <div className="main">
-      <Menu />
+
         <div className="pimg1">
           <div className="ptext">
-           <span className="border">
+          <span className="border">
             <Home />
-           </span>
+          </span>
           </div>
         </div>
         <section className="section section-light">
@@ -47,9 +47,9 @@ const Parllax = (props) => {
 
         <div className="pimg2">
           <div className="ptext">
-           <span className="border">
+          <span className="border">
             <Work />
-           </span>
+          </span>
           </div>
         </div>
         <section className="section section-light">
@@ -68,25 +68,18 @@ const Parllax = (props) => {
 
         <div className="pimg3">
           <div className="ptext">
-           <span className="border">
-           More Coming Soon
-           </span>
+          <span className="border">
+          More Coming Soon
+          </span>
           </div>
         </div>
         <section className="section section-light">
-          <h2>Section Three</h2>
+          <h2>Contact</h2>
           <Contact />
           <p>
-          More Coming Soon
           </p>
         </section>
     </div>
-  )
-}
-
-function App() {
-  return (
-    <Parllax />
   );
 }
 

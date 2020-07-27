@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/About.css';
 
 const About = () => {
-  const header = `Hi!`
+  const header = `A Little About Me`
   const introduction = `I'm a web developer based in Silicon Valley, CA. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.`;
   const profileImg = "https://media-exp1.licdn.com/dms/image/C5603AQHWZv6GOIdVaQ/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=t3Oub7lrB8fKsh87AJqGAoQ1q_wbKLiDj8Mr6VX3SV4"
   return (
