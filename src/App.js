@@ -10,6 +10,8 @@ import Portfolio from './components/Portfolio.js';
 import Work from './components/Work.js';
 import Contact from './components/Contact.js';
 import TwentyFourtyEight from './components/TwentyFourtyEight.js';
+import SimpleModal from './components/SimpleModal.js';
+
 import './css/App.css';
 
 const store = configureStore();
@@ -56,7 +58,9 @@ function App() {
           </div>
         </div>
         <section className="section section-dark">
-          <TwentyFourtyEight />
+          <div className="twentyFourtyEightBtn">
+            <SimpleModal className="simpleModal"/>
+          </div>
         </section>
 
         <div className="pimg3">

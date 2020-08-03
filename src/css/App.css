@@ -80,64 +80,37 @@ body, html{
   line-height: 80px;
   padding: 20px;
 }
-/* 
-.main {
-  z-index: -1;
+
+.twentyFourtyEightBtn h6 {
+  position: relative;
+  top: -100px;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+}
+
+.twentyFourtyEightBtn span {
+  position: relative;
+  top: -100px;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
+
+.twentyFourtyEightBtn span:hover {
+  position: relative;
+  top: -100px;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  color: tomato;
+  transition: 1s;
+}
+
+.simpleModal {
   display: flex;
   position: absolute;
-  background-image: url("background.jpg"); 
-  background-size: 100%;
-  background-repeat: no-repeat; 
-  width: 100%;
-  height: 100%;
+  width:150px;
+  height: 1000px;
+  background-color: white;
 }
-
-.app {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  border-style: solid;
-  background-color:black;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: white;
-}
-
-
-
-#welcome-message {
-  display: flex;
-  position: absolute;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: white;
-  font-size: 150px;
-  background-size: 100%;
-}
-
-@keyframes slideInFromTopMenuOpen {
-  0% {
-    
-    transform: translateY(-80%);
-    transform: initialTransparen
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-.menu-btn {
-  animation: 1s ease-in-out 0s 1 slideInFromTopMenuOpen;
-}
-
-
-.route {
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-size: 100px;
-}
-
-
- */

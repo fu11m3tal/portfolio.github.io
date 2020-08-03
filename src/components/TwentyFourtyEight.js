@@ -182,12 +182,13 @@ class TwentyFourtyEight extends React.Component {
 
   componentDidMount() {
     window.addEventListener("keydown", this.checkKeyPress, false);
+  
   }
 
   render() {
     const {matrix} = this.state;
     return (
-      <div className="app">
+      <div className="twentyFourtyEight">
         <h3>2048</h3>
         <div className="board">
           {matrix.map((row, rIndex) => (

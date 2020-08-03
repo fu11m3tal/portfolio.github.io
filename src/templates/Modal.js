@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
+import TwentyFourtyEight from './TwentyFourtyEight.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -177,10 +178,7 @@ const Modal = () => {
                     <h1 className="display-3 my-3 font-weight-bold">
                       Wonderful serenity has possession
                     </h1>
-                    <p className="font-size-lg mb-0 text-white-50">
-                      A free hour, when our power of choice is untrammelled and
-                      when nothing prevents.
-                    </p>
+                    <TwentyFourtyEight />
                     <div className="divider border-1 mx-auto my-4 border-light opacity-2 rounded w-25" />
                     <div>
                       <Button color="primary" variant="contained" size="large">
