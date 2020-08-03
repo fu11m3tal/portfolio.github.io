@@ -9,6 +9,7 @@ import About from './components/About.js';
 import Portfolio from './components/Portfolio.js';
 import Work from './components/Work.js';
 import Contact from './components/Contact.js';
+import TwentyFourtyEight from './components/TwentyFourtyEight.js';
 import './css/App.css';
 
 const store = configureStore();
@@ -36,8 +37,10 @@ function App() {
 
         <div className="pimg1">
           <div className="ptext">
-          <span className="border">
-            <Home />
+          <span className="welcome">
+          I'M STEVEN.
+          <br/>
+          A FULLSTACK WEB DEVELOPER. 
           </span>
           </div>
         </div>
@@ -48,36 +51,23 @@ function App() {
         <div className="pimg2">
           <div className="ptext">
           <span className="border">
-            <Work />
+          TEXT OVER IMAGE 2
           </span>
           </div>
         </div>
-        <section className="section section-light">
-          <p>
-          Languages & Frameworks:​ Javascript (ES6+), React, Redux, jQuery, HTML/CSS
-
-          </p>
-          <p>
-          Databases:​ MongoDB, MySQL, PostgreSQL
-          
-          </p>
-          <p>
-          Other Technologies:​ NodeJS, Express, Jest/Enzyme, Mocha/Chai, Git, Babel, Webpack, AWS (EC2, S3), Docker, Git, Github, Trello, Styled-Components, Loader.io, New Relic, NGINX
-          </p>
+        <section className="section section-dark">
+          <TwentyFourtyEight />
         </section>
 
         <div className="pimg3">
           <div className="ptext">
           <span className="border">
-          More Coming Soon
+            
           </span>
           </div>
         </div>
         <section className="section section-light">
-          <h2>Contact</h2>
-          <Contact />
-          <p>
-          </p>
+          TEXT OVER COLOR 3
         </section>
     </div>
   );

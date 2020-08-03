@@ -1,15 +1,10 @@
-#about {
-  position: absolute;
-  display: block;
-  text-align: left;
-  top: 10%;
-  left: 15%;
-  width: 50%;
+.about {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 30px;
 }
 
 .profile {
   border-radius: 100%;
-  width: 300px;
+  width: 400px;
   margin-bottom: 10px;
 }

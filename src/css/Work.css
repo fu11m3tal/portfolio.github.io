@@ -1,0 +1,19 @@
+.work {
+  position: relative;
+  display: flexbox;
+  width: 410px;
+  height: 500px;
+  padding: 0px;
+  margin: 0px; 
+  border-radius: 10px;
+  background-color: #bbada0;
+}
+
+.row {
+  margin: 5px;
+  display: flex;
+  width: 400px;
+  height: 100px;
+  flex-direction: row;
+  /* flex-direction: column; */
+}

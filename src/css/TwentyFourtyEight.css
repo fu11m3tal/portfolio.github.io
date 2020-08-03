@@ -1,0 +1,280 @@
+
+h3 {
+  width: 100%;
+  padding: 25px;
+  padding-top: 80px;
+  text-align: center;
+  text-justify: center;
+  font-size: 60px;
+  line-height: 0px;
+  font-weight: 0.7;
+  font-family: 'Sora', sans-serif;
+}
+.game {
+  position: relative;
+  display: flexbox;
+  width: 100%;
+  height: 910px;
+  margin: 300px; 
+  border-radius: 10px;
+  background-color: #a4968a;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.board {
+  display: flexbox;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  padding-top: 10px;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.row {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.dashboard {
+  position: relative;
+  top: 20px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.dashboard span {
+  flex: 1;
+}
+
+.score {
+  flex: 100;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -20px;
+  border-radius: 0%;
+  left: 0px;
+  background-color: #72830d;
+  opacity: .5;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.controller {
+  width: 50%;
+  height: 200px;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10%;
+  opacity: 0.9;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#down {
+  flex: 1;
+  position: relative;
+}
+#up {
+  flex: 1;
+  position: relative;
+}
+#left {
+  flex: 2;
+  position: relative;
+  right: 20px;
+}
+
+#right {
+  flex: 2;
+  position: relative;
+  left: 20px;
+}
+
+#restart {
+  flex: 2;
+  position: relative;
+  padding-top: 3px;
+  top: 80px;
+  height: 200%;
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-justify: center;
+  background-color: tomato;
+}
+
+p {
+  position: relative;
+  top: -15px;
+}
+
+.buttons {
+  position: relative;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.buttons span {
+  flex: 1;
+}
+
+
+.button {
+  display: flex;
+  cursor: pointer;
+  align-content: center;
+  justify-content: center;
+  border-style: none;
+  border-radius: 5px;
+  background-color: steelblue;
+  opacity: 1;
+}
+
+
+.arrow {
+  position: relative;
+  top: 0px;
+  font-size: 25px;
+  line-height: 0px;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.box {
+  position: relative;
+  top: -50px;
+  color: black;
+}
+
+.open, .closed {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  text-justify: center;
+  font-size: 60pt;
+  opacity: 0.55;
+  border-radius: 10px;
+  font-family: 'Lexend Zetta', sans-serif;
+}
+
+.open {
+  background-color: #eee4da;
+}
+
+.closed {
+  background-color: rgba(238, 228, 218, 0.35);
+}
+
+#box-2 {
+  background-color: #f9e6e4;
+}
+
+#box-4 {
+  background-color: #ffc0b9;
+}
+
+#box-8 {
+  background-color: #fea399;
+}
+
+#box-16 {
+  background-color: #fa7263;
+  color: white;
+  font-size: 50pt;
+}
+
+#box-32 {
+  background-color: #fc402c;
+  color: white;
+  font-size: 50pt;
+}
+
+#box-64 {
+  background-color: #ff1900;
+  color: white;
+  font-size: 50pt;
+}
+
+#box-128 {
+  background-color: #d0d1ff;
+  color: orange;
+  font-size: 30pt;
+}
+
+#box-256 {
+  background-color: #9c9dfc;
+  color: orange;
+  font-size: 30pt;
+}
+
+#box-512 {
+  background-color: #7c7eff;
+  color: orange;
+  font-size: 30pt;
+}
+
+#box-1024{
+  background-color: #4b4df9;
+  color: orange;
+  font-size: 15pt;
+}
+
+#box-2048{
+  background-color: #0004ff;
+  color: orange;
+  font-size: 15pt;
+}
