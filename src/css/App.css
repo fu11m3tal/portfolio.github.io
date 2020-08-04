@@ -107,10 +107,15 @@ body, html{
   transition: 1s;
 }
 
-.simpleModal {
+.modal {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
   display: flex;
   position: absolute;
-  width:150px;
-  height: 1000px;
-  background-color: white;
+  width: 520px;
+  height: 960px;
+  background-color: grey;
+  border-radius: 1.5%;
 }

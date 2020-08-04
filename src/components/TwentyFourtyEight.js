@@ -208,53 +208,53 @@ class TwentyFourtyEight extends React.Component {
             <span/>
           </div>
           <div className="controller">
-            <div className="buttons">
+            <div className="up">
               <span/>
               <span/>
               <span/>
               <button 
-                  className="button" 
-                  id="up"
-                  onClick={this.handleUpSelect}
-                >
-                  <p className="arrow">&uarr;</p>
+                className="button" 
+                id="up-arrow"
+                onClick={this.handleUpSelect}
+              >
+                &uarr;
               </button>
               <span/>
               <span/>
               <span/>
             </div>
-            <div className="buttons">
+            <div className="left-right">
               <span/>
-              <span/>
+              <span className="side"/>
               <button 
                 className="button" 
-                id="left"
+                id="left-arrow"
                 onClick={this.handleLeftSelect}
                 onKeyPress={() => {console.log("key press")}}
               >
-                <p className="arrow">&larr;</p>
+                &larr;
               </button>
               <span/>
               <button 
                 className="button" 
-                id="right"
+                id="right-arrow"
                 onClick={this.handleRightSelect}
               >
-                <p className="arrow">&rarr;</p>
+                &rarr;
               </button>
               <span/>
               <span/>
             </div>
-            <div className="buttons">
+            <div className="down">
               <span/>
               <span/>
               <span/>
               <button 
                   className="button" 
-                  id="down"
+                  id="down-arrow"
                   onClick={this.handleDownSelect}
                 >
-                  <p className="arrow">&darr;</p>
+                  &darr;
               </button>
               <span/>
               <span/>
