@@ -1,28 +1,113 @@
+
+
+
 body, html{
-  margin:0;
-  font-weight:400;
-  color:rgb(50, 49, 49);
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: #242f3f;
 }
 
+@keyframes fade-in {
+  0% { 
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-.main {
-  
-  height: 5000px;
+@keyframes slide-out {
+  0% { 
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(-295px)
+  }
+}
+
+@keyframes slide-in {
+  0% { 
+    transform: translateY(1000px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+@keyframes spinner {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-loader {
+  height: 3500px;
   margin:0;
+}
+
+.loader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: -200px;
+  width:100%;
+  min-height: 30%;
+  margin:0;
+  background-color: #242f3f;
+  animation: slide-out 2s cubic-bezier(0.42,0,1,1);
+  animation-delay: 5s;
+}
+
+.loader-logo {
+  position: relative;
+  width: 65pt;
+  height: 70pt;
+  top: -50px;
+  opacity: 1;
+  animation: 1s ease-in 0s 4 spinner;
+}
+
+.main-app {
+  height: 3500px;
+  margin:0;
+}
+
+.ptext {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:280;
+  font-size: 50px;
+  line-height: 80px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: white;
+  animation: slide-in 3s ease;
 }
 
 .pimg1, .pimg2, .pimg3 {
   position: relative;
-  opacity: 0.70;
+  opacity: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  animation: slide-in 3s cubic-bezier(0.25,0.1,0.25,1);
+  
 }
 
 
 .pimg1 {
-  background-image:url('../img/image1.jpg');
+  /* background-image:url('../img/image1.jpg'); */
   min-height: 33%;
 }
 
@@ -48,74 +133,64 @@ body, html{
 }
 
 .section-light{
+  height: 1100px;
   background-color: #f4f4f4;
   color:rgb(0, 0, 0);
+  transition: 5s;
 }
 
 .section-dark {
+  height: 1000px;
   background-color: #282e34;
   color: #ddd;
+  background-image: url("arcade.jpg");
+  background-size: 100%;
 }
 
-.ptext {
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-  color: black;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.welcome {
-  position: relative;
-  top: -400px;
-  left: 0%;
-  font-size: 70px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight:280;
-  color:rgb(0, 0, 0);
-  line-height: 80px;
-  padding: 20px;
-}
 
 .twentyFourtyEightBtn h6 {
   position: relative;
-  top: -100px;
+  top: 500px;
   font-size: 30px;
   font-family: 'Press Start 2P', cursive;
   text-decoration: underline;
 }
 
+
 .twentyFourtyEightBtn span {
   position: relative;
-  top: -100px;
+  top: 500px;
   font-size: 30px;
   font-family: 'Press Start 2P', cursive;
   cursor: pointer;
+  
 }
 
 .twentyFourtyEightBtn span:hover {
   position: relative;
-  top: -100px;
+  top: 500px;
   font-size: 30px;
   font-family: 'Press Start 2P', cursive;
   cursor: pointer;
   color: tomato;
   transition: 1s;
+  /* transform: scale(0.1, 0.1);; */
 }
-
 .modal {
   display: flex;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
-  display: flex;
+  margin-right: 30px;
+  margin-top: 520px;
   position: absolute;
-  width: 520px;
-  height: 960px;
-  background-color: grey;
+  width: 100%;
+  height: 50%;
   border-radius: 1.5%;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  animation: 1s ease-in-out 0s 1 slideInFromTopTabOpen;
 }
+

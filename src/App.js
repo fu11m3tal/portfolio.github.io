@@ -13,7 +13,7 @@ import TwentyFourtyEight from './components/TwentyFourtyEight.js';
 import SimpleModal from './components/SimpleModal.js';
 
 import './css/App.css';
-
+import $ from "jquery";
 const store = configureStore();
 class DynamicImport extends Component {
   state = {
@@ -33,89 +33,85 @@ class DynamicImport extends Component {
   }
 }
 
-function App() {
-  return (
-    <div className="main">
-
-        <div className="pimg1">
-          <div className="ptext">
-          <span className="welcome">
-          I'M STEVEN.
-          <br/>
-          A FULLSTACK WEB DEVELOPER. 
-          </span>
-          </div>
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    }
+    this.loader = this.loader.bind(this);
+  }
+  loader() {
+    var {loading} = this.state;
+    if(loading) {
+      $(".loader").fadeOut("slow");
+      return(
+        <div className="main-loader">
+          <div className="loader">
+            <img className="loader-logo" src="./images/hexagon/Transparent-Logo.png" alt="thumbnail"/>
+          </div>  
+        </div>        
+      )
+    }
+    if(!loading) {
+      return(
+        <div className="main-app">
+          <div className="pimg1">
+              <div className="ptext">
+              <span className="welcome">
+              I'M
+              STEVEN
+              <br/>
+              A 
+              <br/>
+              FULLSTACK
+              <br/>
+              WEB DEVELOPER
+              </span>
+              </div>
+            </div>
+            <section className="section section-light">
+              <About />
+            </section>
+    
+            <div className="pimg2">
+              <div className="ptext">
+              <span className="border">
+              </span>
+              </div>
+            </div>
+            <section className="section section-light">
+              <About />
+            </section>
+    
+            <div className="pimg3">
+              <div className="ptext">
+              <span className="border">
+                
+              </span>
+              </div>
+            </div>
+            <section className="section section-dark">
+              <div className="twentyFourtyEightBtn">
+                <SimpleModal className="simpleModal"/>
+              </div>
+            </section> 
+        </div>    
+      )
+    }
+  }
+  componentDidMount() {
+    setTimeout(() => (this.setState({loading: false})),7000)
+  }
+  render() {
+      return (
+        <div className="main">
+            {this.loader()}
         </div>
-        <section className="section section-light">
-          <About />
-        </section>
-
-        <div className="pimg2">
-          <div className="ptext">
-          <span className="border">
-          TEXT OVER IMAGE 2
-          </span>
-          </div>
-        </div>
-        <section className="section section-dark">
-          <div className="twentyFourtyEightBtn">
-            <SimpleModal className="simpleModal"/>
-          </div>
-        </section>
-
-        <div className="pimg3">
-          <div className="ptext">
-          <span className="border">
-            
-          </span>
-          </div>
-        </div>
-        <section className="section section-light">
-          TEXT OVER COLOR 3
-        </section>
-    </div>
-  );
+      )
+    }
+    
+  
 }
 
 export default App;
-
-
-// const Home = (props) => (
-//   <DynamicImport load={() => import('./components/Home.js')}>
-//     {(Component) => Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props} />}
-//   </DynamicImport>
-// )
-
-
-// const About = (props) => (
-//   <DynamicImport load={() => import('./components/About.js')}>
-//     {(Component) => Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props} />}
-//   </DynamicImport>
-// )
-
-// const Portfolio = (props) => (
-//   <DynamicImport load={() => import('./components/Portfolio.js')}>
-//     {(Component) => Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props} />}
-//   </DynamicImport>
-// )
-
-// const Resume = (props) => (
-//   <DynamicImport load={() => import('./components/Resume.js')}>
-//     {(Component) => Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props} />}
-//   </DynamicImport>
-// )
-// const Contact = (props) => (
-//   <DynamicImport load={() => import('./components/Contact.js')}>
-//     {(Component) => Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props} />}
-//   </DynamicImport>
-// )

@@ -7,6 +7,7 @@
 
 h3 {
   width: 100%;
+  margin-bottom: 0px;
   padding: 20px;
   padding-top: 10px;
   text-align: center;
@@ -16,7 +17,7 @@ h3 {
   font-weight: 0.7;
   font-family: 'Press Start 2P', cursive;
 }
-.game {
+/* .game {
   position: relative;
   display: flexbox;
   left: 150px;
@@ -32,10 +33,11 @@ h3 {
   align-items: center;
   justify-items: center;
   
-}
+} */
 
 .board {
   display: flexbox;
+
   width: 100%;
   margin: 0px;
   padding: 10px;
@@ -50,10 +52,10 @@ h3 {
 }
 .row {
   flex: 1;
-  padding: 5px;
+  padding: 0px;
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 80px;
   flex-direction: row;
   align-self: center;
   justify-self: center;
@@ -92,7 +94,7 @@ h3 {
   border-radius: 0%;
   left: 0px;
   background-color: #72830d;
-  opacity: .5;
+  opacity: 0;
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
   text-align: center;
@@ -110,13 +112,18 @@ h3 {
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 10%;
-  opacity: 0.9;
+  opacity: 1;
   align-self: center;
   justify-self: center;
   align-content: center;
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+
+.controller div {
+  right: 200px;
+  top: -50px;
 }
 
 .up {
@@ -262,23 +269,37 @@ h3 {
 .box {
   position: relative;
   top: -80px;
-  color: black;
+  /* color: black; */
 }
 
 .open, .closed {
   flex: 1;
-  width: 100px;
-  height: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 70px;
+  height: 70px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0 px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   align-content: center;
   justify-content: center;
   text-align: center;
   text-justify: center;
-  font-size: 60pt;
+  font-size: 40pt;
   opacity: 0.55;
   border-radius: 10px;
   font-family: 'Lexend Zetta', sans-serif;
+}
+
+.open p {
+  top: -60px;
+}
+
+.closed p {
+  top: 0px;
 }
 
 .open {
@@ -287,6 +308,7 @@ h3 {
 
 .closed {
   background-color: rgba(238, 228, 218, 0.35);
+  opacity: 1;
 }
 
 #box-2 {
