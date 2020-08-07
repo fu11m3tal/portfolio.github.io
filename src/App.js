@@ -11,9 +11,11 @@ import Work from './components/Work.js';
 import Contact from './components/Contact.js';
 import TwentyFourtyEight from './components/TwentyFourtyEight.js';
 import SimpleModal from './components/SimpleModal.js';
-
+import Swing from './components/Swing.js';
+import Rocket from './components/Rocket.js';
 import './css/App.css';
 import $ from "jquery";
+
 const store = configureStore();
 class DynamicImport extends Component {
   state = {
@@ -37,7 +39,7 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      loading: true,
+      loading: false,
     }
     this.loader = this.loader.bind(this);
   }
@@ -56,7 +58,10 @@ class App extends React.Component{
     if(!loading) {
       return(
         <div className="main-app">
-          <div className="pimg1">
+        <section className="section section-light">
+              <Rocket />
+            </section>
+          {/* <div className="pimg1">
               <div className="ptext">
               <span className="welcome">
               I'M
@@ -81,7 +86,7 @@ class App extends React.Component{
               </div>
             </div>
             <section className="section section-light">
-              <About />
+              <Swing />
             </section>
     
             <div className="pimg3">
@@ -95,7 +100,7 @@ class App extends React.Component{
               <div className="twentyFourtyEightBtn">
                 <SimpleModal className="simpleModal"/>
               </div>
-            </section> 
+            </section>  */}
         </div>    
       )
     }
