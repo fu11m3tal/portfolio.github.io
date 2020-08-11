@@ -6,8 +6,16 @@ const Home = () => {
   const introduction = `I'm a web developer with a passion for front end development and design. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.`;
   return (
     <div className="home">
-      <h1>I'm Steven.</h1>
-      <h5>a Fullstack Web Developer.</h5>
+      <span className="welcome">
+        I'M
+        STEVEN
+        <br/>
+        A 
+        <br/>
+        FULLSTACK
+        <br/>
+        WEB DEVELOPER
+      </span>
     </div>
   )
 }

@@ -13,6 +13,9 @@ import TwentyFourtyEight from './components/TwentyFourtyEight.js';
 import SimpleModal from './components/SimpleModal.js';
 import Swing from './components/Swing.js';
 import Rocket from './components/Rocket.js';
+import Playground from './components/Playground.js';
+import Loader from './components/Loader.js';
+
 import './css/App.css';
 import $ from "jquery";
 
@@ -48,59 +51,46 @@ class App extends React.Component{
     if(loading) {
       $(".loader").fadeOut("slow");
       return(
-        <div className="main-loader">
-          <div className="loader">
-            <img className="loader-logo" src="./images/hexagon/Transparent-Logo.png" alt="thumbnail"/>
-          </div>  
-        </div>        
+        <Loader />     
       )
     }
     if(!loading) {
       return(
-        <div className="main-app">
-        <section className="section section-light">
-              <Rocket />
-            </section>
+        <div className="app-wrapper">
+          <Swing />
+          {/* <Home /> */}
+          <Playground />
           {/* <div className="pimg1">
-              <div className="ptext">
-              <span className="welcome">
-              I'M
-              STEVEN
-              <br/>
-              A 
-              <br/>
-              FULLSTACK
-              <br/>
-              WEB DEVELOPER
-              </span>
-              </div>
+            <div className="ptext">
+              <Home />
             </div>
-            <section className="section section-light">
-              <About />
-            </section>
+          </div>
+          <section className="section section-light">
+            <Swing />
+          </section>
     
-            <div className="pimg2">
-              <div className="ptext">
-              <span className="border">
-              </span>
-              </div>
+          <div className="pimg2">
+            <div className="ptext">
+            <span className="border">
+            </span>
             </div>
-            <section className="section section-light">
-              <Swing />
-            </section>
-    
-            <div className="pimg3">
-              <div className="ptext">
-              <span className="border">
-                
-              </span>
-              </div>
+          </div>
+          <section className="section section-light">
+      
+          </section>
+  
+          <div className="pimg3">
+            <div className="ptext">
+            <span className="border">
+              
+            </span>
             </div>
-            <section className="section section-dark">
-              <div className="twentyFourtyEightBtn">
-                <SimpleModal className="simpleModal"/>
-              </div>
-            </section>  */}
+          </div>
+          <section className="section section-dark">
+            <div className="twentyFourtyEightBtn">
+              <SimpleModal className="simpleModal"/>
+            </div>
+          </section>  */}
         </div>    
       )
     }
