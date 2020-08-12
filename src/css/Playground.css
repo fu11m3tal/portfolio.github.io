@@ -12,7 +12,7 @@
 }
 
 
-@keyframes rider-slide-in {
+@keyframes scooter-slide-in {
   0% {
     transform: translateX(-2300px)  ;
 }
@@ -21,43 +21,99 @@
 }
 }
 
-@keyframes rider-background-slide-in {
+@keyframes scooter-rider-bounce {
   0% {
-    transform: translateX(-1400px);
+    transform: translateY(2px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(0px);
   }
   100% {
-    transform: translateX(0px)  ;
+    transform: translateY(2px)  ;
 
-}
+  }
 }
 
-#rider{
-  animation: 4.2s ease rider-slide-in 0s 1;
+
+
+@keyframes scooter-bounce {
+  0% {
+    transform: translateY(1px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1px)  ;
+
+  }
+}
+
+
+@keyframes scooter-rider-hair-bounce {
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-2px)  ;
+
+  }
+}
+
+#scooter-rider-container {
+  animation: 2s ease scooter-rider-bounce 0s 1;
   transform-origin: top;
+  transform-box: fill-box;
+  }
+#package, #vespa {
+  animation:scooter-rider-bounce 1.75s infinite linear;
+  transform-origin: center;
   transform-box: fill-box;
 }
 
-#background{
-  animation: 3.5s ease rider-background-slide-in 0s 1;
-  transform-origin: top;
+#vespa {
+  animation:scooter-bounce 1.75s infinite linear;
+  transform-origin: center;
   transform-box: fill-box;
 }
 
 
-#biker{
-  flex: 1;
-  position: relative;
-  top: 0px;
-  padding: 0px;
-  margin: 0px;
-  width: 100pt;
-  height: 100%;
+#hair {
+  animation:scooter-rider-hair-bounce  1.75s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-
-#front-wheel, #back-wheel {
+#wheel-left {
   animation:spinner 1.75s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
   -webkit-animation:spinner 1.75s infinite linear;
-}
+  }
+
+#wheel-right{
+  animation:spinner 1.25s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  }

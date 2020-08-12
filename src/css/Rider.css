@@ -1,0 +1,63 @@
+@keyframes spinner {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  } 
+}
+
+
+@keyframes rider-slide-in {
+0% {
+  transform: translateX(-2300px)  ;
+}
+100% {
+  transform: translateX(0px)  ;
+}
+}
+
+@keyframes rider-background-slide-in {
+0% {
+  transform: translateX(-1400px);
+}
+100% {
+  transform: translateX(0px)  ;
+
+}
+}
+
+#rider{
+animation: 4.2s ease rider-slide-in 0s 1;
+transform-origin: top;
+transform-box: fill-box;
+}
+
+#background{
+animation: 3.5s ease rider-background-slide-in 0s 1;
+transform-origin: top;
+transform-box: fill-box;
+}
+
+
+#biker{
+flex: 1;
+position: relative;
+top: 0px;
+padding: 0px;
+margin: 0px;
+width: 100pt;
+height: 100%;
+}
+
+
+#front-wheel, #back-wheel {
+animation:spinner 1.75s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+-webkit-animation:spinner 1.75s infinite linear;
+}

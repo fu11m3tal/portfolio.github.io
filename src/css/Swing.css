@@ -9,14 +9,10 @@
   
   @keyframes slide-out {
     0% { 
-      transform: translateY(0px)
+      transform: translateY(250px)
     }
     100% {
       transform: translateY(-295px)    ;
-      -webkit-transform: translateY(-295px);
-      -moz-transform: translateY(-295px);
-      -ms-transform: translateY(-295px);
-      -o-transform: translateY(-295px);
 }
   }
   
