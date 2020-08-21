@@ -1,0 +1,34 @@
+.main-home {
+    margin: 400px;
+
+    border-style: solid;
+    background-color: tan;
+}
+
+.main-contact {
+    margin: 400px;
+
+    border-style: solid;
+    background-color: darkviolet;
+}
+
+.main-about {
+    margin: 400px;
+
+    border-style: solid;
+    background-color: turquoise;
+}
+
+.main-portfolio {
+    margin: 400px;
+
+    border-style: solid;
+    background-color: brown;
+}
+
+.main-contact {
+    margin: 400px;
+
+    border-style: solid;
+    background-color: brown;
+}

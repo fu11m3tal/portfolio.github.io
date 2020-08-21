@@ -1,5 +1,448 @@
 
 
+@keyframes slide-p-1 {
+  from {transform: translateX(-500px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-2 {
+  from {transform: translateX(-1000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-3 {
+  from {transform: translateX(-1500px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-4 {
+  from {transform: translateX(-3000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-5 {
+  from {transform: translateX(-4500px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-6 {
+  from {transform: translateX(-6000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-p-7 {
+  from {transform: translateX(-7500px)}
+  to {transform: translateX(0px)}
+}
+
+.home-details p:nth-child(1), .home-details p:nth-child(2), .home-details p:nth-child(3), .home-details p:nth-child(4), .home-details p:nth-child(5), .home-details p:nth-child(6), .home-details p:nth-child(7)  {
+  font-weight: 100;
+}
+
+.home-details p:nth-child(1) {
+  font-size: 60px;
+  line-height: 80px;
+  padding-left: 0px;
+  animation: slide-p-1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.home-details p:nth-child(2) {
+  font-size: 90px;
+  line-height: 80px;
+  padding-left: 0px;
+  margin-top: 10px;
+  animation: slide-p-2;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+ 
+}
+
+.home-details p:nth-child(3) {
+    font-size: 40px;
+    padding-top: 100px;;
+  animation: slide-p-3;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.home-details p:nth-child(4) {
+  font-size: 50px;
+  padding-left: 0px;
+  animation: slide-p-4;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+.home-details p:nth-child(5) {
+  font-size: 40px;
+  padding-left: 0px;
+  animation: slide-p-5;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+.home-details p:nth-child(6) {
+  padding-left: 0px;
+  animation: slide-p-6;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+.home-details p:nth-child(7) {
+  padding-left: 0px;
+  animation: slide-p-7;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+.home-details{
+  position: absolute;
+  left: 280px;
+  top: 250px;
+  width: 900px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+.about {
+
+}
+
+.about-details{
+  position: absolute;
+  left: 280px;
+  top: 250px;
+  width: 900px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@keyframes slide-h1 {
+  from {transform: translateX(-1400px)}
+  to {transform: translateX(0px)}
+}
+
+
+.about-details h1 {
+  margin-top: 15px; 
+  animation: slide-h1;
+  animation-delay: 0.2s;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide-p {
+  from {transform: translateX(-1400px)}
+  to {transform: translateX(0px)}
+}
+
+.about-details p {
+  margin-top: 15px;
+  animation: slide-p;
+  animation-delay: 0.4s;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+}
+
+
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+/* ***** ABOUT SECTION ***** */
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes scale {
+  from {transform: scale(1)}
+  to {transform: scale(5)}
+}
+
+@keyframes scale-man {
+  0% {transform: scale(0)}
+  50% {transform: scale(0)}
+  100% {transform: scale(1)}
+}
+
+@keyframes slide-planets1 {
+  from {transform: translateX(-10000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets2 {
+  from {transform: translateX(-9000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets3 {
+  from {transform: translateX(-8000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets4 {
+  from {transform: translateX(-7000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets5 {
+  from {transform: translateX(-6000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets6 {
+  from {transform: translateX(-5000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets7 {
+  from {transform: translateX(-4000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets8 {
+  from {transform: translateX(-3000px)}
+  to {transform: translateX(0px)}
+}
+
+@keyframes slide-planets9 {
+  from {transform: translateX(-2000px)}
+  to {transform: translateX(0px)}
+}
+
+
+
+@keyframes scale-pulse {
+  0% {transform: translate(0px, 0px)}
+  50% {transform: translate(100px, 100px)}
+  100% {transform: translate(0px, 0px)}
+}
+
+
+@keyframes slide-planets-down {
+  from {transform: translateY(-80px)}
+  to {transform: translateY(0px)}
+}
+
+@keyframes planet-scale-in {
+  0% {transform: translate(0px, 0px)}
+  100% {transform: translate(200px, 0px)}
+}
+
+@keyframes planet-preview {
+  0% {transform: translate(0px, -140px)}
+  100% {transform: translate(0px, 0px)}
+}
+
+@keyframes planet-scale{
+  0% {transform: scale(0)}
+  100% {transform: scale(4)}
+}
+
+#LV-426 {
+  animation: planet-scale;
+  animation-delay: 0s;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+  transform: scale(4);
+}
+#sun, #earth, #triple, #saturn {
+  transform: translate(0px, -140px);
+}
+
+#sun-preview, #earth-preview, #triple-preview, #saturn-preview {
+  animation: planet-preview;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transform: translate(0px, 0px);
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+
+#sun-active, #earth-active, #triple-active, #saturn-active {
+  animation: planet-scale-in;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform: scale(20);
+  transform: translate(200px, 0px);
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+
+
+/* #triple-1, #earth {
+  animation: slide-planets-down;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#triple-2, #sun {
+  animation: slide-planets-down;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#triple, #saturn {
+  animation: slide-planets-down;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#triple {
+  animation: slide-planets-down;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+} */
+
+#mars {
+  animation: slide-planets7;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#astroids {
+  animation: slide-planets8;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+
+#neptune {
+  animation: slide-planets8;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+
+
+/* #man {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 13s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#saturn {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#sun{
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#mars {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#triple-1 {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 14s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+#triple-2 {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+#triple-3 {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Neptune {
+  animation: slide-planets;
+  animation-delay: 0s;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+    transform-box: fill-box;
+} */
+
+
 
 body, html{
     margin: 0;
