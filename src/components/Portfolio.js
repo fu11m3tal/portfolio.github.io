@@ -12,22 +12,35 @@ import TwentyFourtyEight from './TwentyFourtyEight.js';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 350,
-    height: 300,
-    margin: 0
+    width: 400,
+    height: 400,
+    marginTop: 200,
+    marginBottom: 200,
+    marginLeft: 15,
+    marginRight: 15,
+    borderRadius: 20,
   },
   media: {
-    height: 140,
+    height: 300,
   },
+  p: {
+    fontSize: 1000,
+  }
 });
 
 export default function Portflio(props) {
   const classes = useStyles();
-  const projects = [{type: "Triply", img: "https://i.imgur.com/uJ0wYa0.gif",  component: "Photo Carousel", stack: "React, HTML/CSSS, Express, MySql"}, {type: "Reviews", img: "",  component: "Fullstack",  stack: "React, HTML/CSSS, Express, Mongo"}, {type: "Fullstack", img: "",  component: "", stack: "React, HTML/CSSS, Express, MySql"}]
+  const projects = [{type: "Triply", img: "https://i.imgur.com/uJ0wYa0.gif",  component: "Photo Carousel", stack: "React, HTML/CSSS, Express, MySql"}, {type: "Coming Soon", img: "",  component: "Fullstack",  stack: "React, HTML/CSSS, Express, Mongo"}, {type: "Coming Soon", img: "",  component: "", stack: "React, HTML/CSSS, Express, MySql"}]
   return (
     <div className="main-portfolio">
-    <p>Portfolio</p>
+      <div className="main-portfolio-title">
+      </div>
+      <div className="main-portfolio-projects">
+        <span/>
+      <span/>
+      <span/>
     {projects.map((project, index) => (
+      <div>
       <Card key={index} className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -48,14 +61,22 @@ export default function Portflio(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button size="large" color="primary">
             Share
           </Button>
-          <Button size="small" color="primary">
+          <Button size="large" color="primary">
             Learn More
           </Button>
         </CardActions>
-      </Card>))}
+      </Card>
+      </div>
+      ))}
+      <span/>
+      <span/>
+      <span/>
+
+      </div>
+      
     </div>
     )
 }

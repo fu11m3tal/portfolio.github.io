@@ -13,7 +13,6 @@ import Nav from './components/Nav.js';
 import './css/App.css';
 import $ from "jquery";
 
-
 class App extends React.Component{
   constructor(props) {
     super(props);
@@ -39,6 +38,13 @@ class App extends React.Component{
           <div className="main">
             <Main />
             <About />
+            <Portfolio />
+            <Contact />
+            Handcrafted 
+            <br/>
+            by 
+            <br/>
+            Steven Yoh
             {/* <Router>
               <Route exact path="/" component={Main}></Route>
               <Route path="/about" component={About}></Route>
@@ -54,7 +60,7 @@ class App extends React.Component{
   }
   render() {
       return (
-        <div className="main">
+        <div>
             {this.loader()}
         </div>
       )

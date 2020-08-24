@@ -5,12 +5,55 @@
     padding: 0;
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 300px;
+    padding: 200px;
+    font-size: 100px;
     line-height: 10px;
     text-align: center;
 }
 
-.main-home div {
+.main-home button {
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #7510F7;
+    border-width: 5px;
+     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+}
+.main-home button:hover {
+    background-color: skyblue;
+}
+
+  @keyframes logo-spin {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+.main-home svg {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width:100px;
+    animation: 2s logo-spin 0s infinite;
+}
+
+.main-home p {
+    position: relative;
+    top: 100px;
+}
+.main-home {
     flex: 1;
 }
 
@@ -41,26 +84,18 @@
   } 
 }
 
-
-/* #backdrop-solid {
-    flex:1;
-    position: relative;
-} */
 .main-about {
-    flex:1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     position: relative;
      animation: 3s ease backdrop-slide-up 0s 1;
     transform-origin: top;
     transform-box: fill-box;
     align-contents: center;
+    /* background-color: orange; */
 }
 
-/* #backdrop-solid {
-     animation: 3s ease backdrop-slide-up 0s 1;
-    transform-origin: top;
-    transform-box: fill-box;
-    align-contents: center;
-} */
 #pen1, #pen2, #pen3 {
      animation: 5s ease computer-slide-up 0s 1;
     transform-origin: top;
@@ -77,27 +112,127 @@
 
 .details {
     position: relative;
-    top: -1000px;
+    top: -1050px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
 }
+
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: -400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+    min-height: 1150px;
+    border-radius: 70px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #C0C0C0;
+    background-color: white;
+}
+
+
+.skills span {
+    flex: 1;
+    text-align: center;
+}
+
+.skills span:nth-child(2) {
+    border-style: none inset none outset;
+}
+
+
+.skills h4 {
+    position: relative;
+    top: -30px;
+    font-size: 45px;
+    line-height: 20px;
+    font-weight: 1000;
+    color: #7510F7;
+}
+
+.skills span img {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    width: 85px;
+    height: 85px;
+}
+
+.skills span p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.main-portfolio {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    position: relative;
+    background-color: #7510F7;
+}
+
+.main-portfolio-title {
+    display: flex;
+    flex:1;
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+}
+
+
+.main-portfolio-projects {
+    display: flex;
+    flex:1;
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.main-portfolio div{
+    flex:1;
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+}
+
+
+.main-portfolio span {
+    flex:1;
+    position: relative;
+    
+}
+
 
 .main-contact {
     flex:1;
     position: relative;
+    background-color: white;
+    margin: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
 }
 
-
-.main-portfolio {
-flex:1;
-    position: relative;
+.icon img{
+    margin:10px;
+    margin-top: 20px;
+    width: 50px;
 }
 
-.main-contact {
-flex:1;
-    position: relative;
+.icon svg{
+    margin: 10px;
+    margin-top: 0px;
+    width: 50px;
 }
-
-
