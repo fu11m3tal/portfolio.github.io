@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import '../css/Main-Components.css';
+import TwentyFourtyEight from './TwentyFourtyEight.js';
 
 const useStyles = makeStyles({
   root: {
@@ -26,7 +27,7 @@ export default function Portflio(props) {
   return (
     <div className="main-portfolio">
     <p>Portfolio</p>
-    {/* {projects.map((project, index) => (
+    {projects.map((project, index) => (
       <Card key={index} className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -54,7 +55,7 @@ export default function Portflio(props) {
             Learn More
           </Button>
         </CardActions>
-      </Card>))} */}
+      </Card>))}
     </div>
     )
 }

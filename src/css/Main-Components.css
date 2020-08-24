@@ -1,34 +1,103 @@
 .main-home {
-    margin: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 300px;
+    line-height: 10px;
+    text-align: center;
+}
 
-    border-style: solid;
-    background-color: tan;
+.main-home div {
+    flex: 1;
+}
+
+@keyframes backdrop-slide-up {
+  0% { 
+    transform: translateY(1500px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
+}
+
+@keyframes backdrop-slide-up {
+  0% { 
+    transform: translateY(1500px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
+}
+
+@keyframes computer-slide-up {
+  0% { 
+    transform: translateY(2500px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
+}
+
+
+/* #backdrop-solid {
+    flex:1;
+    position: relative;
+} */
+.main-about {
+    flex:1;
+    position: relative;
+     animation: 3s ease backdrop-slide-up 0s 1;
+    transform-origin: top;
+    transform-box: fill-box;
+    align-contents: center;
+}
+
+/* #backdrop-solid {
+     animation: 3s ease backdrop-slide-up 0s 1;
+    transform-origin: top;
+    transform-box: fill-box;
+    align-contents: center;
+} */
+#pen1, #pen2, #pen3 {
+     animation: 5s ease computer-slide-up 0s 1;
+    transform-origin: top;
+    transform-box: fill-box;
+    align-contents: center;
+}
+
+#computer {
+    animation: 4s ease computer-slide-up 0s 1;
+    transform-origin: top;
+    transform-box: fill-box;
+    align-contents: center;
+}
+
+.details {
+    position: relative;
+    top: -1000px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
 }
 
 .main-contact {
-    margin: 400px;
-
-    border-style: solid;
-    background-color: darkviolet;
+    flex:1;
+    position: relative;
 }
 
-.main-about {
-    margin: 400px;
-
-    border-style: solid;
-    background-color: turquoise;
-}
 
 .main-portfolio {
-    margin: 400px;
-
-    border-style: solid;
-    background-color: brown;
+flex:1;
+    position: relative;
 }
 
 .main-contact {
-    margin: 400px;
-
-    border-style: solid;
-    background-color: brown;
+flex:1;
+    position: relative;
 }
+
+

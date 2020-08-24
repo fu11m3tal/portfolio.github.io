@@ -1,14 +1,13 @@
 import React from 'react';
-import '../css/Main.css';
 const Main = () => {
-  const header = `Hi`;
-  const name = `My name is Steven Yoh.`
-  const introduction = `I'm a fullstack web developer`;
+  const firstName = `Steven`;
+  const lastName = `Yoh`
   return (
     <div className="main-home">
-        <p>{header}</p>
-        <p>{name}</p>
-        <p>{introduction}</p>
+      <div>
+        <p>{firstName}</p>
+        <p>{lastName}</p>
+      </div>
     </div>
   )
 }
