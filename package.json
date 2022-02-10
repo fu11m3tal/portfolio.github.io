@@ -69,7 +69,7 @@
     "webkit-npm": "^3.1.1"
   },
   "devDependencies": {
-    "node-sass": "4.13.1",
+    "node-sass": "7.0.0",
     "sass-vars-to-js-loader": "2.1.1"
   },
   "scripts": {
